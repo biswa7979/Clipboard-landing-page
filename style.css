@@ -228,6 +228,10 @@ width:3rem;
         width:85%;
         margin: 0 auto;
     }
+    .three-block .container .sub-container div{
+    flex:1;
+    }
+    
     .five-comapany .container .sub-container{
         display: flex;
         flex-direction: row;
