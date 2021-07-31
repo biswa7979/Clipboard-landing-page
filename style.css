@@ -1,0 +1,266 @@
+@import url(https://fonts.google.com/specimen/Bai+Jamjuree);
+:root{
+    --Strong-Cyan: hsl(171, 66%, 44%);
+--Light-Blue: hsl(233, 100%, 69%);
+
+
+--Dark-Grayish-Blue: hsl(210, 10%, 33%);
+--Grayish-Blue: hsl(201, 11%, 66%);
+
+}
+*,::after,::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    
+width: 100%;
+font-size: 18px;
+font-family: 'Bai Jamjuree' , sans-serif;
+}
+h1,h2,h3{
+    color:var(--Dark-Grayish-Blue);
+    font-weight: 600;
+    line-height: 2.2rem;
+    
+}
+h1{
+    font-size: 1.8rem;
+}
+p{
+    color: var(--Grayish-Blue);
+    font-weight: 400;
+}
+main{
+    width: 100%;
+    
+}
+
+img{
+    max-width:100%;
+}
+li{
+    list-style: none;
+}
+.logo{
+    background-image: url(./images/bg-header-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:4rem 4rem 1rem 4rem
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:2rem ;
+    
+}
+.container{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    line-height: 1.8rem;
+    margin: 1rem 0 2rem 0;
+}
+.button{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+}
+.button li{
+    background-color: var(--Light-Blue);
+    border-radius: 50px;
+    padding: 1rem 3rem;
+    max-width:330px ;
+    box-shadow: 0 .2rem .2rem -0.2rem;
+    color: white;
+    margin: 0 auto;
+}
+.button .green{
+    background-color:var(--Strong-Cyan) ;
+    transition: .5s ease;
+}
+.button .green:hover{
+    color: var(--Dark-Grayish-Blue);
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.button .violate{
+    background-color:var(--Light-Blue) ;
+    transition: .5s ease;
+}
+.button .violate:hover{
+    color: var(--Dark-Grayish-Blue);
+    cursor: pointer;
+    background-color: transparent;
+}
+.mac-text{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin: 2rem 0 2rem 0;
+    line-height: 1.6rem;
+}
+
+.three-block{
+    padding-top: 0;
+}
+ .sub-container{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.three-block .container .sub-container div{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.footer{
+    background: hsl(0, 0%, 93%);
+}
+.footer .bottom-logo{
+width:3rem;
+}
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+}
+.footer-container ul{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+   font-weight: 400;
+    color: var(--Grayish-Blue);
+}
+.footer-container  .social-media{
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   
+}
+.bottom-logo{
+    align-items: center;
+}
+.footer .footer-container li{
+    cursor: pointer;
+}
+.footer .footer-container li:hover{
+    color:red;
+    
+}
+@media screen and (min-width: 400px) and (max-width: 800px){
+
+    body{
+     
+    }
+    main{
+        width: 70%;
+        margin: 0 auto;
+        
+    }
+}
+@media screen and (min-width: 800px){
+
+    section{
+        margin-bottom: 3rem;
+    }
+    .logo{
+        background-image: url(./images/bg-header-mobile.png);
+    }
+    .download .container{
+        max-width: 750px;
+    }
+    .download .button{
+        display: flex;
+        flex-direction: row;
+        width: 70%;
+        margin: 0 auto;
+    }
+    .macbook{
+        padding: 0;
+        flex: 1;
+    }
+    .devices{
+        margin-bottom: 1rem;
+    }
+    .macbook .mackbook-container
+    {
+        padding: 0;
+        margin: 0;
+        width:100%;
+        display: flex;
+
+    }
+    .mac-img{
+        flex: 1;
+    }
+    .mac-text{
+        flex: 1;
+
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+        margin: 1rem 0 1rem 0;
+        line-height: 1.6rem;
+        padding: 0 4rem 0 4rem;
+    }
+    .devices .container{
+        margin: -2.5rem 0 -4rem 0;
+    }
+    .three-block .container .sub-container{
+        display: flex;
+        flex-direction: row;
+        width:85%;
+        margin: 0 auto;
+    }
+    .five-comapany .container .sub-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between
+        
+        
+    }
+    .footer {
+        margin: 0;
+        padding: 2rem 6rem;
+    }
+    .footer .footer-container{
+        display: flex;
+        flex-direction: row;
+        gap:5rem;
+        width: 100%;
+        text-align:left ;
+        position: relative;
+        justify-content: center;
+    }
+    .footer .bottom-logo{
+        position: absolute;
+        width:4rem;
+        left: 0;
+       
+    }
+    .social-media{
+        position: absolute;
+        right:0;
+    }
+    .single{
+        color:transparent;
+    }
+  
+    
+}
